@@ -36,3 +36,11 @@ document.write('<br>Página de Universe '+ urlUniverse);
 //urlUniverse = 123;
 //document.write('<br>Página de Universe '+ urlUniverse);
 
+let precioSinImpuestos = 1100;
+let impuesto = 600;
+
+// document.write('<br>El precio del Iphone 15 Pro Max es: $'+ (precioSinImpuestos + impuesto) + 'USD');
+
+let totalConImpuestos = precioSinImpuestos + impuesto;
+
+document.write('<br>El precio del Iphone 15 Pro Max es: $'+ totalConImpuestos + 'USD');
