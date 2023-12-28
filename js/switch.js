@@ -6,7 +6,12 @@ do{
     const operacion = prompt(
         "Selecione una opción: 1- Consultar saldo, 2- Depositar dinero, 3- Extraer dinero");
 
+        // console.log(operacion.toLowerCase); // transformar un strinng a minuscula
+        // console.log(operacion.toUpperCase);// transformar un strinng a mayuscula
+        // String.tirm() quita los espacios vacios del incio o final, no del medio
+
         switch (operacion) {
+            case 'saldo':
             case "1":
               document.write(`<p>Saldo disponible: $${saldo}</p>`);
               console.log(saldo);
@@ -47,7 +52,7 @@ do{
           }
 }while(confirm('Desea hacer otra operación?'));
 
-
+console.log(saldo);
 
 
 /*
