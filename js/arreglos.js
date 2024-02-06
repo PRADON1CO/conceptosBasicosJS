@@ -60,3 +60,17 @@ for (let posicion = 0; posicion < juegos.length ;posicion++){
 
 document.write(`</ul>`);
 
+ //modificar elementos del array 
+juegos[3] = 'Dont starve';
+//juegos = 'Dont starve' este codigo es incorrecto, no puedo cambiar el contenido total del array otro valor 
+
+document.write(`<h2>Modificamos el juego de la posicio 6 del juego 🎮 (${juegos.length})</h2>`);
+
+document.write(`<ul>`)
+for (let posicion = 0; posicion < juegos.length ;posicion++){
+    document.write(`<li> ${juegos[posicion]} </li>`);
+}
+
+document.write(`</ul>`);
+
+
