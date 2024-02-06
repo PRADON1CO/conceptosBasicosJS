@@ -73,4 +73,34 @@ for (let posicion = 0; posicion < juegos.length ;posicion++){
 
 document.write(`</ul>`);
 
+//eliminar elementos del array
 
+juegos.shift();
+document.write(`<h2>Borramos el primer elemento del array🎮 (${juegos.length})</h2>`);
+
+document.write(`<ul>`)
+for (let posicion = 0; posicion < juegos.length ;posicion++){
+    document.write(`<li> ${juegos[posicion]} </li>`);
+}
+
+document.write(`</ul>`);
+
+juegos.splice(3,1);
+document.write(`<h2>Borramos el elemento de la posicion 3 del array 🎮 (${juegos.length})</h2>`);
+
+document.write(`<ul>`)
+for (let posicion = 0; posicion < juegos.length ;posicion++){
+    document.write(`<li> ${juegos[posicion]} </li>`);
+}
+
+document.write(`</ul>`);
+
+juegos.pop();
+document.write(`<h2>borramos el ultimo elemto del array 🎮 (${juegos.length})</h2>`);
+
+document.write(`<ul>`)
+for (let posicion = 0; posicion < juegos.length ;posicion++){
+    document.write(`<li> ${juegos[posicion]} </li>`);
+}
+
+document.write(`</ul>`);
